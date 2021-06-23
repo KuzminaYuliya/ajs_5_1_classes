@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/x7lnousbb6ggw5yn?svg=true)](https://ci.appveyor.com/project/KuzminaYuliya/ajs-4-2-matchers)
