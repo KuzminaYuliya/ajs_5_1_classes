@@ -7,27 +7,28 @@ import Zombie from '../zombie';
 
 test('should create players', () => {
   const bowermanPlayer = {
-    name: 'testBowerman', type: 'Bowerman', health: 100, level: 1, attack: 25, defence: 25,
+    name: 'Bowerman', type: 'Bowerman', health: 100, level: 1, attack: 25, defence: 25,
   };
   const daemonPlayer = {
-    name: 'testDaemon', type: 'Daemon', health: 100, level: 1, attack: 10, defence: 40,
+    name: 'Daemon', type: 'Daemon', health: 100, level: 1, attack: 10, defence: 40,
   };
   const magicianPlayer = {
-    name: 'testMagician', type: 'Magician', health: 100, level: 1, attack: 10, defence: 40,
+    name: 'Magician', type: 'Magician', health: 100, level: 1, attack: 10, defence: 40,
   };
   const swordsmanPlayer = {
-    name: 'testSwordsman', type: 'Swordsman', health: 100, level: 1, attack: 40, defence: 10,
+    name: 'Swordsman', type: 'Swordsman', health: 100, level: 1, attack: 40, defence: 10,
   };
   const undeadPlayer = {
-    name: 'testUndead', type: 'Undead', health: 100, level: 1, attack: 25, defence: 25,
+    name: 'Undead', type: 'Undead', health: 100, level: 1, attack: 25, defence: 25,
   };
   const zombiePlayer = {
-    name: 'testZombie', type: 'Zombie', health: 100, level: 1, attack: 40, defence: 10,
+    name: 'Zombie', type: 'Zombie', health: 100, level: 1, attack: 40, defence: 10,
   };
-  expect(new Bowerman('testBowerman')).toEqual(bowermanPlayer);
-  expect(new Daemon('testDaemon')).toEqual(daemonPlayer);
-  expect(new Magician('testMagician')).toEqual(magicianPlayer);
-  expect(new Swordsman('testSwordsman')).toEqual(swordsmanPlayer);
-  expect(new Undead('testUndead')).toEqual(undeadPlayer);
-  expect(new Zombie('testZombie')).toEqual(zombiePlayer);
+  expect(new Bowerman('Bowerman')).toEqual(bowermanPlayer);
+  expect(new Bowerman('Bowerman9999999')).toEqual(new Error('Неверные данные'));
+  expect(new Daemon('Daemon')).toEqual(daemonPlayer);
+  expect(new Magician('Magician')).toEqual(magicianPlayer);
+  expect(new Swordsman('Swordsman')).toEqual(swordsmanPlayer);
+  expect(new Undead('Undead')).toEqual(undeadPlayer);
+  expect(new Zombie('Zombie')).toEqual(zombiePlayer);
 });
